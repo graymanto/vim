@@ -1,4 +1,4 @@
-@set SRC=vim
+@set SRC=..\vim
 :: DEST must match version number in order to run install.exe
 @set DEST=vim80
 

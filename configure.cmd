@@ -1,7 +1,7 @@
 @echo off
 
 :: Windows SDK Include directory. No quotation marks.
-set SDK_INCLUDE_DIR=C:\Program Files (x86)\Windows Kits\8.1\Include
+set SDK_INCLUDE_DIR=C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Include
 
 :: Visual Studio directory. Quotation marks.
 set VS_DIR="C:\Program Files (x86)\Microsoft Visual Studio 14.0"
@@ -13,10 +13,10 @@ set CPU=AMD64
 set TOOLCHAIN=x86_amd64
 
 :: TINY, SMALL, NORMAL, BIG or HUGE. NORMAL or above recommended
-set FEATURES=BIG
+set FEATURES=HUGE
 
 :: yes for gvim, no for vim
-set GUI=yes
+set GUI=no
 
 :: Whatever IDE integrations we don't need
 set NETBEANS=no
@@ -26,8 +26,8 @@ set MBYTE=yes
 
 :: Enable Python scripting
 set DYNAMIC_PYTHON=yes
-set PYTHON=C:\Python27
-set PYTHON_VER=27
+set PYTHON3=C:\ProgramData\Anaconda3
+set PYTHON3_VER=36
 
 echo "Configuring Visual Studio..."
 call %VS_DIR%\VC\vcvarsall.bat %TOOLCHAIN%
